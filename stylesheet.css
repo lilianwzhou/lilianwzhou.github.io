@@ -1,0 +1,19 @@
+
+
+
+/* . is for classes */
+.box {
+    /* Styling for all classes with class box will go here */
+    background-color: red;
+    height: 400px;
+}
+
+/* id's are hashtags # */
+#nav {
+
+}
+
+body {
+    width: 100%;
+    background-color: blue;
+}
