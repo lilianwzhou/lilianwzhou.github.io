@@ -1,0 +1,92 @@
+html {
+    scroll-behavior: smooth;
+}
+h1 {
+    margin: 0;
+    padding: 10px;
+}
+body {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: "Varela Round", "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+}
+a, a:visited, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: black;
+}
+/* id's are hashtags # */
+#nav {
+    display: flex;
+}
+#left-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+}
+#middle-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+}
+#right-nav{
+    width: 20vw;
+}
+
+/* . is for classes */
+.box {
+    /* Styling for all classes with class box will go here */
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    height: 400px;
+    width: 96%;
+    margin-bottom: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 10px;
+}
+.box-title {
+    display: relative;
+    z-index: 1;
+    opacity: 0;
+}
+.overlay {
+    border-radius: 10px;
+    z-index: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(148, 148, 148);
+    opacity: 0;
+    transition: opacity .5s ease-in-out; /* Animation */
+    
+}
+
+.overlay:hover, .overlay:active, .overlay:focus {
+    opacity: 0;
+}
+.box:hover .overlay, .box:active .overlay, .box:focus .overlay {
+    opacity: 0.5;
+}
+.box:hover .box-title, .box:active .box-title, .box:focus .box-title {
+    opacity: 1;
+}
+
+.footer {
+    padding: 0;
+    margin-bottom: 0;
+    background-color: rgb(252, 199, 54);
+}
+
+
+
