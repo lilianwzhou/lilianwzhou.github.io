@@ -1,0 +1,100 @@
+html {
+    scroll-behavior: smooth;
+    min-height: 100%;
+    overflow: scroll
+}
+* {
+  box-sizing: border-box;
+}
+h1 {
+    margin: 0;
+    padding: 20px;
+    color:darkgray;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+a, a:visited, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: black;
+}
+/* id's are hashtags # */
+#nav {
+    display: flex;
+}
+#left-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#middle-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+}
+#right-nav{
+    width: 20vw;
+}
+.header {
+  text-align: center;
+  padding: 10px;
+  color: darkslateblue;
+  font-size: 150%;
+  font-weight: bold;
+  font-style: italic;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.footer {
+    padding: 20px;
+    margin-bottom: 0;
+    background-color: white;
+    color: darkslateblue;
+    text-align: center;
+}
+
+
+
