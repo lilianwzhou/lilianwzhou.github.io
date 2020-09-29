@@ -1,0 +1,143 @@
+html {
+    scroll-behavior: smooth;
+}
+h1 {
+    margin: 0;
+    padding: 10px;
+}
+body {
+    position: relative;
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a, a:visited, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: whitesmoke; 
+}
+/* id's are hashtags # */
+#nav {
+    display: flex;
+    /* background-image: url(../assets/photo-1.jpeg); */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    transition: 0.4s all;
+}
+.topColor {
+    background-color: white;
+}
+.topColor a{
+    color: darkslategray;
+}
+#left-nav{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 50vw;
+}
+#middle-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    width: 20vw;
+}
+#right-nav{
+    padding-right: 20px;
+    width: 30vw;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: right;
+}
+#right-ul {
+    text-align: right;
+}
+
+/* . is for classes */
+.box {
+    /* Styling for all classes with class box will go here */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 2%;
+    background-size: cover;
+    background-position: center;
+}
+.box1 {
+    height: 520px;
+}
+.img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img1 {
+    background-image: url(../assets/photo-1.jpeg);
+}
+.img2 {
+    background-image: url(../assets/photo-2.jpeg);
+}
+.img3 {
+    background-image: url(../assets/photo-3.jpg);
+}
+.img4 {
+    background-image: url(../assets/photo-4.jpeg)
+}
+.box-title {
+    display: relative;
+    z-index: 1;
+    opacity: 0;
+    color: darkslategray;
+}
+.overlay {
+    z-index: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(148, 148, 148);
+    opacity: 0;
+    transition: opacity .5s ease-in-out; /* Animation */
+    
+}
+
+.overlay:hover, .overlay:active, .overlay:focus {
+    opacity: 0;
+}
+.box:hover .overlay, .box:active .overlay, .box:focus .overlay {
+    opacity: 0.6;
+}
+.box:hover .box-title, .box:active .box-title, .box:focus .box-title {
+    opacity: 1;
+}
+.box:hover .img, .box:active .img, .box:focus .img {
+    /* filter: blur(4px); */
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+
+}
+
+.footer {
+    padding: 0;
+    margin-bottom: 0;
+    background-color: white;
+    color: darkslategray
+}
+
+
+
